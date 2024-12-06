@@ -20,7 +20,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install codespell==2.3.0 flake8==7.1.1 isort==5.13.2 yapf==0.43.0
+        pip install codespell==2.3.0 flake8==7.1.1 isort==5.13.2 yapf==0.43.0 mccabe==0.7.0 platformdirs==4.3.6 pycodestyle==2.12.1 pyflakes==3.2.0 tomli==2.2.1 
 
     # modify the folders accordingly
     - name: Lint
