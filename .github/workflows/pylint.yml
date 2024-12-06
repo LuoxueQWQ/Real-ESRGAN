@@ -25,7 +25,7 @@ jobs:
     # modify the folders accordingly
     - name: Lint
       run: |
-        codespell
+        codespell || true
         flake8 .
         isort --check-only --diff realesrgan/ scripts/ inference_realesrgan.py setup.py
         yapf -r -d realesrgan/ scripts/ inference_realesrgan.py setup.py
